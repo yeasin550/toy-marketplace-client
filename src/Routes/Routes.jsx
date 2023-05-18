@@ -9,6 +9,7 @@ import Home from "../components/Home/Home/Home";
 import AllToys from "../pages/AllToys/AllToys";
 import AddToys from "../pages/AddToys/AddToys";
 import MyToys from "../pages/MyToys/MyToys";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -45,5 +46,8 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    errorElement: <ErrorPage></ErrorPage>
+  }
 ]);
 export default router;
