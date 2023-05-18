@@ -16,7 +16,7 @@ function Footer() {
           </p>
         </div>
         <div className="col-span-1">
-          <h2 className="text-white text-lg font-medium mb-4">Latest</h2>
+          <h2 className="text-white text-lg font-medium mb-4">Latest Update</h2>
           <ul className="text-gray-400 text-sm leading-loose">
             <li>
               <Link to="">Public API</Link>
