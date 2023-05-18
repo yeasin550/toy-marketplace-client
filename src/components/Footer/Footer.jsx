@@ -39,7 +39,7 @@ function Footer() {
           <p className="text-gray-400 text-sm leading-loose">
             123 Main St.
             <br />
-            Anytown, USA 12345
+            Anytown, USA 123457
             <br />
             (123) 456-7890
             <br />
