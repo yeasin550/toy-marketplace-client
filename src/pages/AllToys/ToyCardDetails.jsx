@@ -24,7 +24,7 @@ const ToyCardDetails = () => {
         <div className="flex p-4">
           <div className="space-y-3 flex-1">
             <h2 className="card-title">h</h2>
-            <p>Toy Name : </p>
+            <p>Toy Name : david</p>
             <p>Sub-category :g</p>
             <p>Price : 500</p>
             <p>Available Quantity : 60</p>
