@@ -26,9 +26,9 @@ const ToyCardDetails = () => {
             <h2 className="card-title">h</h2>
             <p>Toy Name : </p>
             <p>Sub-category :g</p>
-            <p>Price : d</p>
+            <p>Price : 500</p>
             <p>Available Quantity : 60</p>
-            <p>Ratings : o Star</p>
+            <p>Ratings : 5 Star</p>
           </div>
         </div>
         
