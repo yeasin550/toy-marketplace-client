@@ -74,7 +74,7 @@ const UpdateToy = () => {
                 name="availableQuantity"
                 type="number"
                 placeholder="Toy Quantity"
-                // min="0"
+              
                 required
               />
             </div>
