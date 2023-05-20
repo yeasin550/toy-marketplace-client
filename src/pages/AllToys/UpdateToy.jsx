@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const UpdateToy = () => {
-  const {id} = useParams()
+  const { id } = useParams();
   console.log("update id", id);
 
   const handleUpdateToys = (event) => {
