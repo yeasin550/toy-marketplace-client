@@ -1,8 +1,9 @@
 
 import Swal from "sweetalert2";
+import useTitle from "../../hooks/useTitle";
 const AddToys = () => {
 
-
+useTitle('AddToys')
   const handleAddToys = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -84,7 +85,7 @@ const AddToys = () => {
               className="block text-gray-700 font-bold mb-2"
               htmlFor="name"
             >
-              Name
+              Toy Name
             </label>
             <input
               className="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"

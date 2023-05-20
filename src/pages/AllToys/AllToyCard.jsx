@@ -11,7 +11,7 @@ const AllToyCard = ({ toy }) => {
     sellerName,
     subCategory,
   } = toy;
-  console.log(toy);
+  // console.log(toy);
 
   return (
     <tr>

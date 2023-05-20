@@ -2,13 +2,17 @@
 const Funnel = () => {
     return (
       <div className="lg:flex justify-around items-center my-12 p-5 lg:hover:shadow-md lg:hover:border-2">
-        <div className="lg:w-1/2 sm:w-full">
+        <div className="lg:w-1/2 sm:w-full" data-aos="zoom-in-right">
           <img
             src="https://i.ibb.co/HVCB5sQ/Screenshot-2023-05-18-122024-removebg-preview.png"
             alt=""
           />
         </div>
-        <div className="lg:w-1/2 sm:w-full space-y-5">
+        <div
+          className="lg:w-1/2 sm:w-full space-y-5"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+        >
           <h1 className="lg:text-left sm:text-center font-bold text-5xl">
             Development and sale of children cars toys
           </h1>

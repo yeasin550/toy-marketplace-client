@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProviders';
 import { Link } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const Register = () => {
   const [error, setError] = useState('')
@@ -31,6 +32,9 @@ const Register = () => {
             console.log(error);
           });
     }
+
+useTitle("Register");
+  
     const handleProfile = (name, photoURL) => {
     const profile = {
       displayName: name,

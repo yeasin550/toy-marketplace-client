@@ -2,7 +2,7 @@
 const RentCar = () => {
     return (
       <div className="lg:flex justify-around items-center mt-12 p-7 gap-5 border-2">
-        <div className="lg:w-1/2 space-y-5">
+        <div className="lg:w-1/2 space-y-5" data-aos="zoom-in-up">
           <h1 className=" font-bold text-5xl ">
             <span className="text-blue-600"> The best way to </span> <br />
             <span className="text-yellow-500">Rent A Car</span>
@@ -26,7 +26,13 @@ const RentCar = () => {
             Submit
           </button>
         </div>
-        <div className="sm:mt-5 lg:w-1/2">
+
+        <div
+          className="sm:mt-5 lg:w-1/2"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div className="carousel w-full rounded-md">
             <div id="item1" className="carousel-item w-full">
               <img

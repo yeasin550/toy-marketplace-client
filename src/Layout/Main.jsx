@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import NavBar from "../components/Header/NavBar";
 
 const Main = () => {
     return (
       <div className="lg:mx-10">
-        <Header></Header>
-        
+       
+        <NavBar></NavBar>
           <Outlet></Outlet>
       
         <Footer></Footer>

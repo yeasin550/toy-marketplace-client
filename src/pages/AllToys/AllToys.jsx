@@ -1,56 +1,38 @@
 import AllToyCard from "./AllToyCard";
 import { useLoaderData } from "react-router-dom";
 import { FaInfoCircle, } from "react-icons/fa";
-// import CreatableSelect from "react-select/creatable";
-// import Select from "react-select";
-// import { useState } from "react";
+import { useState } from "react";
+import useTitle from "../../hooks/useTitle";
 const AllToys = () => {
-  //  const [selectedOption, setSelectedOption] = useState(null);
+ 
   const toyCars = useLoaderData();
   // console.log(toyCars);
+ const [searchQuery, setSearchQuery] = useState("");
 
-// const options = [
-//   { value: "chocolate", label: "Chocolate" },
-//   { value: "strawberry", label: "Strawberry" },
-//   { value: "vanilla", label: "Vanilla" },
-// ];
-//  const [searchQuery, setSearchQuery] = useState("");
+ const handleSearch = (event) => {
+  event.preventDefault()
+   const toyName = event.target.search.value;
+   setSearchQuery(toyName)
+   console.log("Search:", searchQuery);
+ };
+ useTitle("AllToys");
 
-//  const handleSearch = () => {
-//    // Perform search action with searchQuery
-//    console.log("Search:", searchQuery);
-//  };
+  
     return (
       <div>
         <div className=" text-center my-4">
-          {/* <div className="flex items-center justify-center">
-            <input
-              type="text"
-              className="rounded-l-lg p-2 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
-              placeholder="Search..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-            <button
-              className="px-4 py-2 rounded-r-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold transition duration-300"
-              onClick={handleSearch}
-            >
-              Search
-            </button>
-          </div> */}
-
-          {/* <CreatableSelect
-            className="w-75"
-            defaultValue={selectedOption}
-            onChange={setSelectedOption}
-            options={options}
-            // isMulti
-          /> */}
-          {/* <Select
-            defaultValue={selectedOption}
-            onChange={setSelectedOption}
-            options={options}
-          /> */}
+          <form onSubmit={handleSearch} className="form-control mx-auto">
+            <div className="input-group">
+              <input
+                type="text"
+                name="search"
+                placeholder="Search"
+                className="input input-bordered"
+                id=""
+              />
+              <input type="button" value="Search" className="btn" />
+            </div>
+          </form>
         </div>
         <div>
           <div className="overflow-x-auto w-full">
