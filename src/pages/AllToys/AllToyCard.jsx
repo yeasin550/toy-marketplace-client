@@ -10,7 +10,7 @@ const AllToyCard = ({ toy }) => {
       pictureUrl,
       price,
       sellerName,
-      subCategory,
+      subCategory
     } = toy;
     console.log(toy)
   
