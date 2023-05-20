@@ -9,6 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   // console.log(location)
+  // console.log(navigate)
   const from = location.state?.from?.pathname || "/";
   const handleLogin = (event) => {
     event.preventDefault();
