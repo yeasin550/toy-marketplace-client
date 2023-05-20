@@ -62,7 +62,7 @@ const AllToys = () => {
                   <th>Toys-Name</th>
                   <th>Sub-category</th>
                   <th>Seller-Name</th>
-                  <th>Price</th>
+                  <th>Price:</th>
                   <th>Quantity</th>
                   <th className="flex justify-center items-center gap-2">
                     Details
