@@ -5,7 +5,7 @@ import { AuthContext } from "../../providers/AuthProviders";
 import logo from '../../assets/logo.png'
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
-  // console.log(user)
+
   const handleLogOut = () => {
     logOut()
       .then((result) => {console.log(result)})
