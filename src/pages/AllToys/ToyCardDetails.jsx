@@ -27,7 +27,7 @@ const ToyCardDetails = () => {
             <p>Toy Name : </p>
             <p>Sub-category :g</p>
             <p>Price : d</p>
-            <p>Available Quantity : d</p>
+            <p>Available Quantity : 60</p>
             <p>Ratings : o Star</p>
           </div>
         </div>
