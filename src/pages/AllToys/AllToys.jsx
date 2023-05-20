@@ -58,7 +58,7 @@ const AllToys = () => {
               {/* head */}
               <thead>
                 <tr>
-                  <th>Toys-Photos</th>
+                  <th>Toys Photos</th>
                   <th>Toys-Name</th>
                   <th>Sub-category</th>
                   <th>Seller-Name</th>
