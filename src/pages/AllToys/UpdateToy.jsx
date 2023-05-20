@@ -56,7 +56,7 @@ const UpdateToy = () => {
                 type="number"
                 // defaultValue={price}
                 placeholder="Toy Price"
-                // min="0"
+                
                 required
               />
             </div>
