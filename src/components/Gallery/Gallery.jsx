@@ -3,7 +3,7 @@ const Gallery = () => {
     return (
       <div>
         <div className="flex justify-center items-center">
-          <h1 className="text-center my-7 text-4xl font-bold animate-bounce animate-pulse text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-pink-700 to-blue-700">
+          <h1 className="text-center my-7 text-4xl font-bold animate-bounce animate-pulse text-transparent bg-clip-text bg-gradient-to-r from-red-700 via-pink-700 to-green-700">
             Our GallerY
           </h1>
         </div>

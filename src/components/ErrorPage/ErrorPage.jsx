@@ -10,7 +10,7 @@ const ErrorPage = () => {
         <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
           <div className="">
             <img
-              src="https://img.freepik.com/free-vector/error-404-concept-landing-page_52683-21190.jpg?w=740&t=st=1684501146~exp=1684501746~hmac=0e844cf4cccb6b891fb38f30f34a20179ef47c063e509be9b160fb60ab6fcfd7"
+              src="https://img.freepik.com/free-vector/page-found-concept-illustration_114360-1869.jpg?w=740&t=st=1684682793~exp=1684683393~hmac=244a1e675609818bc5178d6843df6c8b2a5d87b0ec51c3d1e635dc671514903f"
               alt=""
               className=" w-96"
             />
@@ -23,7 +23,10 @@ const ErrorPage = () => {
             <p className="text-2xl font-semibold md:text-3xl mb-8">
               {error?.message}
             </p>
-            <Link to="/" className="bg-green-500 text-white font-bold px-3 py-2 rounded-lg">
+            <Link
+              to="/"
+              className="bg-green-500 text-white font-bold px-3 py-2 rounded-lg"
+            >
               Back to home
             </Link>
           </div>

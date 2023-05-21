@@ -59,7 +59,7 @@ const AddToys = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen shadow-md">
-      <div className="bg-white p-10 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2">
+      <div className="bg-white p-10 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2 border-2 border-gray-500">
         <h1 className="text-2xl font-bold mb-6 text-center">Add New Toy</h1>
         <form onSubmit={handleAddToys}>
           <div className="mb-4">
@@ -74,6 +74,7 @@ const AddToys = () => {
               id="pictureUrl"
               name="pictureUrl"
               type="url"
+              placeholder="Phot URL"
               required
             />
           </div>

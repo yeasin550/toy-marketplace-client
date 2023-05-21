@@ -24,7 +24,7 @@ const Funnel = () => {
             siblings, as well as enhancing language skills and building
             vocabulary
           </p>
-          <button className=" my-5 bg-gradient-to-br from-[#6025F5] to-[#FF5555] px-5 py-3 text-base font-medium text-white transition duration-200 hover:shadow-lg hover:shadow-[#6025F5]/50">
+          <button className=" mr-4 gap-2 px-7 py-3 rounded-md  bg-gradient-to-r from-red-500 to-indigo-500 text-white shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-gray-500 hover:to-red-500">
             Get Started
           </button>
         </div>

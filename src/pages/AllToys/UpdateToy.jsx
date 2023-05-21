@@ -40,7 +40,7 @@ const UpdateToy = () => {
   };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen shadow-md">
-      <div className="bg-white p-10 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2">
+      <div className="bg-white p-10 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2 border-2 border-green-300">
         <h1 className="text-2xl font-bold mb-6 text-center">Update Toys</h1>
         <form onSubmit={handleUpdateToys}>
           <div className="flex gap-2 ">
@@ -98,7 +98,7 @@ const UpdateToy = () => {
           <div className="mt-6">
             <button
               type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="w-full bg-orange-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
             >
               Update Toys
             </button>

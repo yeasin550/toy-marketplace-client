@@ -20,14 +20,14 @@ const RentCar = () => {
             vocabulary
           </p>
           <input
-            className="border-2 pl-2 py-3 mr-3"
+            className="border-2 pl-2 py-3 mr-3 border-green-600"
             type="email"
             name=""
             id=""
             placeholder="Enter Email"
           />
-          <button className="  mr-4 gap-2 px-7 py-3  bg-gradient-to-r from-orange-500 to-indigo-500 text-white shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-red-500">
-            Submit
+          <button className="  mr-4 gap-2 px-7 py-3 rounded-md  bg-gradient-to-r from-red-500 to-indigo-500 text-white shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-gray-500 hover:to-red-500">
+            Subscribe
           </button>
         </div>
 
