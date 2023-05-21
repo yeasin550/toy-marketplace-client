@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import useTitle from "../../hooks/useTitle";
 
 const UpdateToy = () => {
-  useTitle('UpdateToys')
+  useTitle("UpdateToys");
   const { id } = useParams();
   console.log("update id", id);
 
@@ -16,9 +16,9 @@ const UpdateToy = () => {
     const price = form.price.value;
     const availableQuantity = form.availableQuantity.value;
     const description = form.description.value;
-    const toysGames = {price, availableQuantity, description}
+    const toysGames = { price, availableQuantity, description };
     console.log(price, availableQuantity, description);
-    fetch(`http://localhost:5000/toys/${id}`, {
+    fetch(`https://toy-marketplace-server-mu.vercel.app/toys/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
@@ -49,7 +49,7 @@ const UpdateToy = () => {
                 className="block text-gray-700 font-bold mb-2"
                 htmlFor="price"
               >
-                Price 
+                Price
               </label>
               <input
                 className="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
@@ -58,7 +58,6 @@ const UpdateToy = () => {
                 type="number"
                 // defaultValue={price}
                 placeholder="Toy Price"
-                
                 required
               />
             </div>
@@ -76,7 +75,6 @@ const UpdateToy = () => {
                 name="availableQuantity"
                 type="number"
                 placeholder="Toy Quantity"
-              
                 required
               />
             </div>

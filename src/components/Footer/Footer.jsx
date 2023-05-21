@@ -7,7 +7,7 @@ function Footer() {
     <footer className="bg-gray-900 pt-12 pb-8 px-4 md:px-10 mt-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="col-span-1">
-          <img className="w-40 h-40" src={logo} alt="" />
+          <img className="w-40 h-40"  src={logo} alt="" />
           <p className="text-gray-400 text-sm leading-loose">
             ACME Industries Ltd.
           </p>
@@ -91,7 +91,7 @@ function Footer() {
             name="email"
             id=""
             placeholder="Enter Your Email"
-          />{" "}
+          />
           <br />
           <input
             className="bg-red-500 py-3 text-white px-4 text-2xl mt-3"

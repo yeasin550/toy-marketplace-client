@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import useTitle from "../../hooks/useTitle";
+import { useParams } from "react-router-dom";
 
-const ToyCardDetails = () => {
+const CategoryDetails = () => {
   useTitle("ToyDetails");
   const { id } = useParams();
   // console.log(id)
@@ -51,4 +51,13 @@ const ToyCardDetails = () => {
   );
 };
 
-export default ToyCardDetails;
+export default CategoryDetails;
+
+
+
+
+
+
+
+
+

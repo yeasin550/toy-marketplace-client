@@ -12,6 +12,7 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import ToyCardDetails from "../pages/AllToys/ToyCardDetails";
 import UpdateToy from "../pages/AllToys/UpdateToy";
 import PrivateRoute from "./PrivateRoute";
+import CategoryDetails from "../components/ShopByCategory/CategoryDetails";
 
 const router = createBrowserRouter([
   {
@@ -50,7 +51,8 @@ const router = createBrowserRouter([
       {
         path: "/allToys",
         element: <AllToys></AllToys>,
-        loader: () => fetch("http://localhost:5000/toys"),
+        loader: () =>
+          fetch("https://toy-marketplace-server-mu.vercel.app/toys"),
       },
       {
         path: "/toyCardDetails/:id",
@@ -60,13 +62,28 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/toys/${params.id}`),
+          fetch(
+            `https://toy-marketplace-server-mu.vercel.app/toys/${params.id}`
+          ),
       },
       {
         path: "/updateToy/:id",
         element: <UpdateToy></UpdateToy>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/toys/${params.id}`),
+          fetch(
+            `https://toy-marketplace-server-mu.vercel.app/toys/${params.id}`
+          ),
+      },
+      {
+        path: "/categoryDetails/:id",
+        element: 
+          <PrivateRoute>
+            <CategoryDetails></CategoryDetails>
+          </PrivateRoute>,        
+        loader: ({ params }) =>
+          fetch(
+            `https://toy-marketplace-server-mu.vercel.app/toys/${params.id}`
+          ),
       },
     ],
   },

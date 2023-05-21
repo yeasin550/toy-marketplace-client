@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-const AllToyCard = ({ toy }) => {
+const AllToyCard = ({ toy, index }) => {
+  
   const {
     _id,
     availableQuantity,
@@ -15,6 +16,7 @@ const AllToyCard = ({ toy }) => {
 
   return (
     <tr>
+      <td>{index + 1}</td>
       <td>
         <div className="flex items-center space-x-3">
           <div className="avatar">

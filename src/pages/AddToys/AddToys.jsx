@@ -1,9 +1,7 @@
-
 import Swal from "sweetalert2";
 import useTitle from "../../hooks/useTitle";
 const AddToys = () => {
-
-useTitle('AddToys')
+  useTitle("AddToys");
   const handleAddToys = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -38,16 +36,16 @@ useTitle('AddToys')
     //   availableQuantity,
     //   description
     // );
-    fetch(`http://localhost:5000/toys`, {
-      method: 'POST',
+    fetch(`https://toy-marketplace-server-mu.vercel.app/toys`, {
+      method: "POST",
       headers: {
-        'content-type': 'application/json'
+        "content-type": "application/json",
       },
-      body: JSON.stringify(toys)
+      body: JSON.stringify(toys),
     })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
         if (data.insertedId) {
           Swal.fire({
             title: "Success!",
@@ -56,8 +54,7 @@ useTitle('AddToys')
             confirmButtonText: "Cool",
           });
         }
-    })
-
+      });
   };
 
   return (
@@ -92,7 +89,7 @@ useTitle('AddToys')
               id="name"
               name="name"
               type="text"
-              placeholder="Toy Name" 
+              placeholder="Toy Name"
               required
             />
           </div>
@@ -109,7 +106,6 @@ useTitle('AddToys')
               name="sellerName"
               type="text"
               placeholder="Your Name (optional)"
-              
             />
           </div>
           <div className="mb-4">
@@ -125,7 +121,6 @@ useTitle('AddToys')
               name="sellerEmail"
               type="email"
               placeholder="Your Email (optional)"
-             
             />
           </div>
 
@@ -140,14 +135,12 @@ useTitle('AddToys')
               className="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
               id="subCategory"
               name="subCategory"
-          
-             
               required
             >
               <option value="">Select a sub-category</option>
-              <option value="Math Toys">Sports</option>
-              <option value="Language Toys">Mini fire truck</option>
-              <option value="Science Toys">Mini police car</option>
+              <option value="sports">Sports</option>
+              <option value="mini_fire_truck">Mini fire truck</option>
+              <option value="mini_police_car">Mini police car</option>
             </select>
           </div>
 
@@ -166,8 +159,6 @@ useTitle('AddToys')
                 type="number"
                 placeholder="Toy Price"
                 min="0"
-              
-              
                 required
               />
             </div>
@@ -187,8 +178,6 @@ useTitle('AddToys')
                 min="0"
                 max="5"
                 step="0.1"
-               
-               
                 required
               />
             </div>
@@ -197,7 +186,7 @@ useTitle('AddToys')
                 className="block text-gray-700 font-bold mb-2"
                 htmlFor="availableQuantity"
               >
-                Available Quantity
+                Quantity
               </label>
               <input
                 className="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
@@ -206,8 +195,6 @@ useTitle('AddToys')
                 type="number"
                 placeholder="Toy Quantity"
                 min="0"
-             
-               
                 required
               />
             </div>
@@ -225,8 +212,6 @@ useTitle('AddToys')
               name="description"
               placeholder="Toy Description"
               rows="5"
-        
-           
               required
             ></input>
           </div>
@@ -242,7 +227,7 @@ useTitle('AddToys')
       </div>
     </div>
   );
-}
+};
 
 export default AddToys;
 // This form should work fine for adding a toy to a website. However, please note that there are some additional things that you may want to consider when implementing such a feature on a real website, such as validating user input, sanitizing user input to prevent security issues, handling file uploads for the picture URL field, and handling server-side errors.
