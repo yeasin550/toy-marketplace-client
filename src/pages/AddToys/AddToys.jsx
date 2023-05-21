@@ -60,7 +60,7 @@ const AddToys = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen shadow-md">
       <div className="bg-white p-10 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2">
-        <h1 className="text-2xl font-bold mb-6">Add a Toy</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">Add New Toy</h1>
         <form onSubmit={handleAddToys}>
           <div className="mb-4">
             <label
@@ -218,7 +218,7 @@ const AddToys = () => {
           <div className="mt-6">
             <button
               type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="w-full bg-orange-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
             >
               Add Toy
             </button>
@@ -230,4 +230,4 @@ const AddToys = () => {
 };
 
 export default AddToys;
-// This form should work fine for adding a toy to a website. However, please note that there are some additional things that you may want to consider when implementing such a feature on a real website, such as validating user input, sanitizing user input to prevent security issues, handling file uploads for the picture URL field, and handling server-side errors.
+

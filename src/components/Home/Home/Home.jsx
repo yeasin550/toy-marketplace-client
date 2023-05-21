@@ -12,8 +12,8 @@ const Home = () => {
             
             <Banner></Banner>
             <Gallery></Gallery>
-            <ShopByCategory></ShopByCategory>
             <Funnel></Funnel>
+            <ShopByCategory></ShopByCategory>
             <RentCar></RentCar>
         </div>
     );

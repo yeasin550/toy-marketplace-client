@@ -36,7 +36,14 @@ const MyToys = () => {
     <div>
       <div>
         <div className="overflow-x-auto w-full">
-          <button className="bg-green-500 py-2 px-4 my-5 text-white font-bold" onClick={handleClick}>Ascending</button>
+          <div className="flex justify-end">
+            <button
+              className="bg-green-500 hover:bg-orange-500 rounded-md py-2 px-4 my-5 text-white font-bold"
+              onClick={handleClick}
+            >
+              Ascending/Descending
+            </button>
+          </div>
           <table className="table w-full">
             {/* head */}
             <thead>

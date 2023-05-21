@@ -107,7 +107,7 @@ const NavBar = () => {
                   <Link to="/login">
                     <button
                       onClick={handleLogOut}
-                      className=" mt-3 relative flex items-center justify-center  mr-4 gap-2 px-5 py-2.5  bg-gradient-to-r from-orange-500 to-indigo-500 text-white rounded-lg shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-red-500"
+                      className=" mt-3 relative flex items-center justify-center  mr-4 gap-2 px-5 py-2.5  bg-gradient-to-r from-green-500 to-indigo-500 text-white rounded-lg shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:red-pink-500 font-bold hover:to-red-500"
                     >
                       LogOut
                     </button>

@@ -52,7 +52,7 @@ const MyToysCard = ({ toy, setToys }) => {
         <Link>
           <FaTrashAlt
             onClick={() => handleDeleteCart(toy._id)}
-            className="text-4xl my-6 text-red-600 "
+            className="text-4xl my-6 text-red-600 hover:text-red-400 "
           ></FaTrashAlt>
         </Link>
       </th>
@@ -75,7 +75,7 @@ const MyToysCard = ({ toy, setToys }) => {
 
       <th className="flex items-center gap-3">
         <Link to={`/updateToy/${_id}`}>
-          <FaPenSquare className="text-5xl my-6 "></FaPenSquare>
+          <FaPenSquare className="text-5xl my-6 hover:text-red-600"></FaPenSquare>
         </Link>
       </th>
     </tr>

@@ -1,13 +1,12 @@
 import AllToyCard from "./AllToyCard";
 import { useLoaderData } from "react-router-dom";
-import { FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import useTitle from "../../hooks/useTitle";
 const AllToys = () => {
   const [searchText, setSearchText] = useState("");
   const toyCars = useLoaderData();
-  // console.log(toyCars);
-  //  const [searchQuery, setSearchQuery] = useState("");
+
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -34,10 +33,10 @@ const AllToys = () => {
             className="p-1 border-2 border-gray-600"
           />{" "}
           <button
-            className="bg-red-700 text-white py-2 px-3"
+            className="bg-green-700 text-white py-2 px-4"
             onClick={handleSearch}
           >
-            Search
+            <FaSearch></FaSearch>
           </button>
         </div>
       </div>
@@ -54,9 +53,9 @@ const AllToys = () => {
                 <th>Seller-Name</th>
                 <th>Price:</th>
                 <th>Quantity</th>
-                <th className="flex justify-center items-center gap-2">
+                <th className="flex justify-center items-center">
                   Details
-                  <FaInfoCircle className="text-2xl mr-10"></FaInfoCircle>
+                  
                 </th>
               </tr>
             </thead>

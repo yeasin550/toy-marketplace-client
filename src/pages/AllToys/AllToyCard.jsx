@@ -12,7 +12,7 @@ const AllToyCard = ({ toy, index }) => {
     sellerName,
     subCategory
   } = toy;
-  // console.log(toy);
+ 
 
   return (
     <tr>
@@ -20,7 +20,7 @@ const AllToyCard = ({ toy, index }) => {
       <td>
         <div className="flex items-center space-x-3">
           <div className="avatar">
-            <div className="mask w-24 h-24">
+            <div className="mask w-24 h-24  rounded-md">
               <img src={pictureUrl} alt="Avatar Tailwind CSS Component" />
             </div>
           </div>
@@ -34,7 +34,7 @@ const AllToyCard = ({ toy, index }) => {
 
       <th className="flex items-center gap-3">
         <Link to={`/toyCardDetails/${_id}`}>
-          <button className=" rounded-md my-3 relative px-5 py-2.5  bg-gradient-to-r from-orange-500 to-indigo-500 text-white  shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-red-500">
+          <button className=" rounded-md my-3 relative px-5 py-2.5  bg-gradient-to-r from-purple-500 to-indigo-500 text-white  shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-green-500">
             Vew Details
           </button>
         </Link>
