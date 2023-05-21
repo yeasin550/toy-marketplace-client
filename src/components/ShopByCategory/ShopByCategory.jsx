@@ -37,7 +37,10 @@ const ShopByCategory = () => {
           {loading ? (
             <span>Loading....</span>
           ) : (
-            <div className=" grid grid-cols-1 lg:grid-cols-2">
+            <div
+              className=" grid grid-cols-1 lg:grid-cols-2"
+              data-aos="fade-right"
+            >
               {toys?.map((toy) => (
                 <div
                   className="card card-compact w-96 bg-base-100 hover:shadow-md border-2"
@@ -66,7 +69,10 @@ const ShopByCategory = () => {
           {loading ? (
             <span>Loading....</span>
           ) : (
-            <div className=" grid grid-cols-1 lg:grid-cols-2">
+            <div
+              className=" grid grid-cols-1 lg:grid-cols-2"
+              data-aos="fade-up-left"
+            >
               {toys?.map((toy) => (
                 <div
                   className="card card-compact w-96 bg-base-100 hover:shadow-md border-2"
@@ -95,7 +101,10 @@ const ShopByCategory = () => {
           {loading ? (
             <span>Loading....</span>
           ) : (
-            <div className=" grid grid-cols-1 lg:grid-cols-2">
+            <div
+              className=" grid grid-cols-1 lg:grid-cols-2"
+              data-aos="flip-up"
+            >
               {toys?.map((toy) => (
                 <div
                   className="card card-compact w-96 bg-base-100 hover:shadow-xl border-2"

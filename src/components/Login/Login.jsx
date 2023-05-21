@@ -46,15 +46,10 @@ const Login = () => {
   };
   
   return (
-    <div
-    // className="hero max-h-screen w-full text-white"
-    // style={{
-    //   backgroundImage: `url("https://img.freepik.com/free-photo/multicolored-stripes-drawing-with-colorful-pencils_23-2148141302.jpg?w=826&t=st=1684345447~exp=1684346047~hmac=eefb594e6e87e33e3c14be86152f26e9b05d25d263d2debf4de4e80511ce4a47")`,
-    // }}
-    >
+    <div data-aos="zoom-in">
       <form
         onSubmit={handleLogin}
-        className="max-w-md mx-auto bg-white p-8 shadow-md mt-12 rounded-md border-2"
+        className="max-w-md mx-auto bg-white p-8 shadow-md mt-12 rounded-md border-2 hover:border-red-200 hover:shadow-yellow-400"
       >
         <h2 className="text-4xl font-bold mb-4 text-center">Please Login</h2>
         <div className="mb-4">
@@ -66,6 +61,7 @@ const Login = () => {
             id="email"
             name="email"
             type="email"
+            placeholder="Enter Your Email"
             required
           />
         </div>
@@ -81,6 +77,7 @@ const Login = () => {
             id="password"
             name="password"
             type="password"
+            placeholder="Enter Your Password"
             required
           />
         </div>
@@ -94,7 +91,7 @@ const Login = () => {
         </div>
         <button
           onClick={handleGoogleSignIn}
-          className="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-md"
+          className="w-full  text-gray-800 font-semibold   rounded-md  bg-white hover:bg-gray-100 hover:border2 hover:border-green-400  py-2 px-4 border-2 border-gray-700  "
         >
           Sign in with Google
         </button>

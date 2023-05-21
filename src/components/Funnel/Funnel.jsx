@@ -1,7 +1,7 @@
 
 const Funnel = () => {
     return (
-      <div className="lg:flex justify-around items-center my-12 p-5 lg:hover:shadow-md lg:hover:border-2">
+      <div className="lg:flex justify-around items-center my-12 p-5 lg:hover:shadow-md lg:hover:shadow-green-500 lg:hover:border-2 lg:hover:border-orange-500">
         <div className="lg:w-1/2 sm:w-full" data-aos="zoom-in-right">
           <img
             src="https://i.ibb.co/HVCB5sQ/Screenshot-2023-05-18-122024-removebg-preview.png"

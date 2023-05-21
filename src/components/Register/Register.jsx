@@ -60,18 +60,13 @@ useTitle("Register");
   }
 
     return (
-      <div
-        // className="hero min-h-screen text-white"
-        // style={{
-        //   backgroundImage: `url("https://img.freepik.com/free-vector/half-tone-blue-abstract-background-with-text-space_1017-41428.jpg?w=826&t=st=1684379082~exp=1684379682~hmac=c9da4306fd8493d1f2c03b28197f79814ee19cfea11f2d75e8ab3c7c61cdd522")`,
-        // }}
-      >
+      <div>
         <form
           onSubmit={handleRegister}
           className="max-w-md mx-auto border-2 p-8 shadow-md mt-6 rounded-md"
         >
-          <h2 className="text-4xl font-bold mb-4 text-center">
-            Create a new account?
+          <h2 className="text-4xl font-bold mb-4 text-center my-7  animate-bounce animate-pulse text-transparent bg-clip-text bg-gradient-to-r from-red-700 via-pink-700 to-green-700">
+            Welcome?
           </h2>
           <div className="mb-4 ">
             <input
@@ -91,6 +86,7 @@ useTitle("Register");
               id="photo"
               name="photo"
               type="text"
+              placeholder="Enter your Photo"
               required
             />
           </div>
@@ -103,6 +99,7 @@ useTitle("Register");
               id="email"
               name="email"
               type="email"
+              placeholder=" Your Email"
               required
             />
           </div>
@@ -115,6 +112,7 @@ useTitle("Register");
               id="password"
               name="password"
               type="password"
+              placeholder="Input your password"
               required
             />
           </div>
@@ -129,18 +127,11 @@ useTitle("Register");
           </div>
           <button
             onClick={handleGoogleSignIn}
-            className="w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-md"
+            className="w-full bg-white hover:bg-gray-200 hover:border2 hover:border-pink-400 text-gray-800 font-semibold py-2 px-4 border-2 border-gray-700  rounded-md"
           >
             Sign in with Google
           </button>
-          {/* <div className="flex mt-3 gap-2">
-            <button
-              onClick={handleGoogleSignIn}
-              className="relative flex items-center justify-center w-full gap-2 py-2 px-4  bg-gradient-to-r from-green-500 to-indigo-500 text-white rounded-lg shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-red-500"
-            >
-              <FaGoogle></FaGoogle>
-            </button>
-          </div> */}
+
           <p className="mt-3">
             Already Have An Account ?
             <Link className="text-primary" to="/login">
