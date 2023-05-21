@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 const ShopByCategory = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Sports");
+  const [selectedCategory, setSelectedCategory] = useState("sports");
   const [toys, setToys] = useState([]);
   const [loading, setLoading] = useState(false);
 
